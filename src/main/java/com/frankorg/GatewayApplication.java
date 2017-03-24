@@ -1,6 +1,6 @@
 package com.frankorg;
 
-import com.frankorg.filters.pre.SimpleFilter;
+import com.frankorg.filters.pre.SimpleRequestFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
@@ -15,7 +15,7 @@ public class GatewayApplication {
 	}
 
 	@Bean
-	public SimpleFilter simpleFilter() {
-		return new SimpleFilter();
+	public SimpleRequestFilter simpleRequestFilter() {
+		return new SimpleRequestFilter();
 	}
 }

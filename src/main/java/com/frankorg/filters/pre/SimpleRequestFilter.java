@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Created by frankzhu on 30/10/16.
  */
-public class SimpleFilter extends ZuulFilter {
+public class SimpleRequestFilter extends ZuulFilter {
 
-    private static Logger log = LoggerFactory.getLogger(SimpleFilter.class);
+    private static Logger log = LoggerFactory.getLogger(SimpleRequestFilter.class);
 
     @Override
     public String filterType() {
